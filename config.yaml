@@ -1,0 +1,13 @@
+config:
+  BinderHub:
+    use_registry: true
+    image_prefix: binder
+    hub_url: http://hub.your-host.com
+    auth_enabled: false
+
+dind:
+  enabled: true
+  daemonset:
+    image:
+      name: docker
+      tag: 18.09.2-dind
